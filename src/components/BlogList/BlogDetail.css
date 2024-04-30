@@ -1,0 +1,20 @@
+#root > div > img{
+    width: 100%;
+    border-radius: 10px;
+}
+#root > div{
+    margin-top: 100px;
+}
+#root > div h1{
+    font-size: 23px;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+#root > div p{
+    color: var(--white);
+    margin: 10px 0;
+}
+.light #root div p{
+    color: #6d6d6d;
+}
