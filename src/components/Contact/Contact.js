@@ -12,7 +12,7 @@ export default function Contact(params){
                                 autoStart:true,
                                 loop: true,
                                 delay: 50,
-                                strings: ['get me in touch']
+                                strings: ['Connect with Me']
                             }}
                         />
                 </div>

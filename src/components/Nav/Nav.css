@@ -2,19 +2,25 @@ body  nav {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	height: 100px;
+	height: 120px;
 	width: 100%;
-	position: fixed;
+	position: sticky;
 	top: 0;
 	left: 0;
-	background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
 	backdrop-filter: blur(10px);
 	-webkit-backdrop-filter: blur(10px);
 	z-index: 3;
+	background-color: rgba(255, 255, 255, 0); /* Start with transparent background */
+    transition:	all 0.5s; 
+	overflow: hidden;
+}
+body nav.at-top {
+	background-color: rgba(255, 255, 255, 0.1); /* Light semi-transparent background when at top */
+    opacity: 1; 
+	height: 90px;
 }
 body.light  nav {
-/*	background: linear-gradient(45deg, var(--light-green), var(--light-yellow));*/
-	background-color: #d3d3d391;
+	background-color: #d3d3d300;
 }
 nav .left{
 	margin-top: 10px;
@@ -50,8 +56,8 @@ nav .right  ul  a{
 body.light  nav .right  ul a{
 	color: #6d6d6d;
 }
-body.light nav.container  div:nth-child(1)  svg:nth-child(1)  g:nth-child(1){
-	fill: #6d6d6d;	
+body nav.container  div:nth-child(1)  svg:nth-child(1)  g:nth-child(1){
+	fill: #fff;	
 }
 nav .right  ul li:last-child a{
 	margin: 0;

@@ -1,0 +1,4 @@
+.light section.customer-feedback.container > div > div > div.des,
+.light  section.customer-feedback.container > div > div > p{
+    color: #fff !important;
+}

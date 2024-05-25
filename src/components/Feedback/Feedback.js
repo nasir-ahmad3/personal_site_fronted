@@ -1,16 +1,17 @@
 import {useFetch} from '../../hooks/UseFetch' 
+import './Feedback.css'
 
 export default function Feedback() {
   const { data: feedback } = useFetch('feedback/');
 
   return (
     <section className="customer-feedback container">
-      <h1 className="title gradient-text">clients feedback</h1>
+      <h1 className="title gradient-text" data-aos="fade-in">clients feedback</h1>
       <div className="box-wrapper">
         {feedback && (
           feedback.map((feed, index) => (
-            <div className="box" key={index}>
-              <div className="img" style={{ backgroundImage: `url(${feed.photo})` }}></div>
+            <div className="box" data-aos="zoom-in" data-aos-delay={`${index * 150}`} key={index}>
+              <div className="img"  style={{ backgroundImage: `url(${feed.photo})` }}></div>
               <p className="title">{feed.name}</p>
               <span className="comma">
               <svg width="30px" height="30px" viewBox="0 0 980.000000 818.000000" preserveAspectRatio="xMidYMid meet">

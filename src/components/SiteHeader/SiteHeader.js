@@ -1,9 +1,8 @@
 import './SiteHeader.css';
-import HeaderImg from '../../assets/images/header_bg.png';
-import Typewriter from 'typewriter-effect';
 import { useFetch } from '../../hooks/UseFetch';
 import { useEffect, useState } from 'react';
-// import Loading from '../loader/Loading';
+import Particles from './particles';
+import { Animator, ScrollContainer, ScrollPage, batch, Fade, FadeIn, FadeOut, Move, MoveIn, MoveOut, Sticky, StickyIn, StickyOut, Zoom, ZoomIn, ZoomOut } from "react-scroll-motion";
 
 export default function SiteHeader() {
   const {data} = useFetch('siteheader/');
@@ -21,45 +20,33 @@ export default function SiteHeader() {
     fetchData();
   }, [data]);
 
+
   return (
     <>
-        <div className="siteHeader container">
-        <div className="left">
-            <div className="experince">
-            <Typewriter
-                options={{
-                autoStart: true,
-                loop: true,
-                delay: 100,
-                strings: [`${years} years of experience.........`],
-                }}
-            />
+    <ScrollContainer>
+        <ScrollPage>
+          <div className="siteHeader container" id='particles-js' style={{overflow: 'hidden'}}>
+            <Particles id="tsparticles" />
+            <div className='des-header'>
+                {/* <Animator animation={Move(0, 0, -1000, 0)}> */}
+                  <h1 className='title gradient-text' data-aos="fade-down">
+                    Hello.
+                  </h1>
+                {/* </Animator> */}
+              {/* <Animator animation={batch(Fade(-4, 1))}>   */}
+                <p data-aos="fade-right">
+                  I'm Nasir Ahmad
+                </p>
+              {/* </Animator> */}
+              {/* <Animator animation={Move(0, 0, 1000, 0)}> */}
+                <div data-aos="fade-up">
+                  a creative web developer. I design and build innovative, responsive websites. Let's work together to bring your digital ideas to life. Contact me today!
+                </div>
+              {/* </Animator> */}
             </div>
-            <div className="title">
-              <p>
-                Empowering digital <br />
-                <span style={{opacity: 0}}>
-                    p
-                </span>
-              </p>
-              <div>
-                  <Typewriter
-                  options={{
-                      autoStart: true,
-                      loop: true,
-                      delay: 200,
-                      strings: texts,
-                  }}
-                  />
-              </div>
-            </div>
-            <p className="content">{data ? data[0].description : 'loading ......'}</p>
-        </div>
-        <div className="right">
-            <div className="bg"></div>
-            <div className="img" style={{ backgroundImage: `url(${HeaderImg})` }}></div>
-        </div>
-        </div>
+          </div>
+        </ScrollPage>
+      </ScrollContainer>
     </>
   );
 }

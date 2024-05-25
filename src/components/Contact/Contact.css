@@ -11,6 +11,8 @@ section.customer-feedback .box-wrapper{
 	justify-content: center;
 	grid-template-columns: repeat(3, 1fr);
 	margin-top: 130px;
+	z-index: 2;
+	position: relative;
 }
 section.customer-feedback .box-wrapper .box{
 	background-image: linear-gradient(45deg, var(--light-green), var(--light-yellow)) !important;
@@ -74,6 +76,8 @@ section.contactme .form-wrapper{
 	background-color: var(--bg-second-color);
 	padding: 50px 100px;
 	border-radius: 5px;
+	position: relative;
+	z-index: 1;
 }
 .light section.contactme .form-wrapper{
 	background-color: #eee;

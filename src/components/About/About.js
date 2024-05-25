@@ -9,10 +9,10 @@ export default function About (params){
 
     return (
         <section className={`aboutme container ${params.url == 'about' ? 'mt-100' : ''}`} id="about">
-            <h1 className="title gradient-text">about me</h1>
+            <h1 className="title gradient-text" data-aos="fade-in">about me</h1>
             <div className="about-box-wrapper">
                 {boxs && boxs.map((about, index) => (
-                    <div className="about-box" key={index}>
+                    <div className="about-box" data-aos="zoom-in" data-aos-delay={`${index * 250}`} key={index}>
                         <div className="img-container">
                             <div className="img" style={{backgroundImage: `url(${about.thumbnail})`}} ></div>
                         </div>
@@ -26,10 +26,10 @@ export default function About (params){
                     <img src={aboutPhoto} alt="" />
                 </div>
                 <div className="des">
-                    <div className="main">
+                    <div className="main" data-aos="fade">
                         {abouts ? abouts[0].first_description : ''}
                     </div>
-                    <div className="more">
+                    <div className="more" data-aos="fade" data-aos-delay="150">
                         {abouts ? abouts[0].second_description : ''}    
                     </div>
                     <a href={abouts ? abouts[0].cv : ''} className="gradient-text my-cv">Downlaod my resume (PDF)</a>

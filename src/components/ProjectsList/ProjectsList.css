@@ -15,7 +15,7 @@ body.light  section.projects{
 	text-transform: capitalize;
 }
 .container > div.des{
-	font-size: 20px;
+	font-size: 16px;
 	text-align: center;
 	margin-top: 10px;
 	color: var(--light-font-color);
@@ -102,6 +102,7 @@ section.projects  .box-wrapper .box .img{
 	cursor: pointer;
 	position: relative;
 	z-index: 2;
+	margin-top: 2px;
 }
 section.projects  .box-wrapper .box .title{
 	font-size: 23px;
