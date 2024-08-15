@@ -20,6 +20,8 @@ body.light  section.projects{
 	margin-top: 10px;
 	color: var(--light-font-color);
 	text-transform: capitalize;
+	display: flex;
+	flex-direction: column;
 }
 .container  div.des .good{
 	opacity: 0;
@@ -112,6 +114,7 @@ section.projects  .box-wrapper .box .title{
 	text-transform: capitalize;
 	position: relative;
 	z-index: 2;
+
 }
 section.projects  .box-wrapper .box .des{
 	font-size: 16px;
@@ -198,4 +201,7 @@ div.owl-item,
 .box-wrapper  .cover.active{
 	pointer-events: auto;
 	opacity: 1;
+}
+.skeleton-text-project-title{
+	width: 50%;
 }

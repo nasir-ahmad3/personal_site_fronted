@@ -417,4 +417,14 @@
     .container > div.des{
         font-size: 13px;
     }
+	.des-header {
+		width: 85%;
+	}
+	.des-header .title{
+		font-size: 50px !important;
+	}
+	.des-header p {
+		margin-top: -10px !important;
+		font-size: 15px;
+	}
 }

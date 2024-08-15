@@ -33,7 +33,13 @@ section.services  .services_container li .title{
 	font-size: 23px;
 	margin: 10px;
 	text-align: center;
+	width: 100%;
 }
 section.services  .services_container li .des{
+	width: 100%;
 	text-align: center;
+}
+.skeleton-service-img{
+	height: 100px;
+	width: 100px;
 }
