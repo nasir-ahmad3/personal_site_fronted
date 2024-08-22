@@ -1,11 +1,11 @@
 
 section.projects{
-	background-color: var(--bg-second-color);
+	background-color: var(--bg-color);
 	padding-top: 50px;
 	padding-bottom: 150px;
 }
 body.light  section.projects{
-	background-color: #eee;
+	background-color: #fff;
 }
 .container  h1.title{
 	text-align: center;

@@ -9,11 +9,10 @@ import Projects from './pages/Projects/Projects';
 import Services from './pages/Services/Services';
 import AboutMe from './pages/AboutMe/AboutMe'
 import ContactMe from './pages/ContactMe/ContactMe';
+import SiteMap from './pages/SiteMap/SiteMap'
 import { useState, useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import { ScrollContainer, ScrollPage} from 'react-scroll-motion';
-
 
 function App() {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
@@ -53,6 +52,7 @@ function App() {
               <Route  path="/services/" element={<Services />}/>
               <Route  path='/about/' element={<AboutMe />}/>
               <Route  path='/contact/' element={<ContactMe />}/>
+              <Route path="/sitemap/" element={<SiteMap />} />
             </Routes>
             <Footer />
           </BrowserRouter>

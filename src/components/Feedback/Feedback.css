@@ -1,3 +1,9 @@
+section.customer-feedback{
+    background-color: var(--bg-color) !important;
+}
+.light section.customer-feedback{
+    background-color: #fff !important;
+}
 .light section.customer-feedback.container > div > div > div.des,
 .light  section.customer-feedback.container > div > div > p{
     color: #fff !important;

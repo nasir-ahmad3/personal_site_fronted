@@ -1,7 +1,8 @@
 section.blog{
-	background-color: var(--bg-second-color);
+	background-color: var(--bg-color);
 	text-align: center;
 }
+.light section.blog,
 .light .bloglist{
 	background-color: #fff !important;
 }
@@ -13,9 +14,6 @@ section.blog{
 }
 .light .pagenation-container {
     background: #fff !important;
-}
-.light section.blog{
-	background-color: #eee;
 }
 section.blog .blog-wrapper{
 	display: grid;

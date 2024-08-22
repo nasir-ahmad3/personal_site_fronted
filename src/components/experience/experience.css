@@ -1,0 +1,89 @@
+section.experience{
+    background-color: var(--bg-second-color);
+}
+.light section.experience{
+    background-color: #eee;
+}
+section.experience > div > div.name{
+    font-size: 25px;
+    color: var(--light-font-color);
+}
+div.job-title{
+    color: var(--white);
+    font-size: 19px;
+    margin-bottom: 15px;
+}
+.light .experience-wrapper .experience,
+.light .job-title{
+    color: var(--black);
+}
+section.experience > div > .des{
+    color: var(--white);
+}
+div.sub-title > svg{
+    width: 25px;
+    height: 25px;
+    margin-right: 5px;
+    stroke-width: 10px;
+}
+div.sub-title {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 10px 0;
+    font-size: 20px;
+    color: var(--light-font-color);
+}
+.experience-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 20px;
+    position: relative;
+    margin-left: 120px;
+}
+.experience-wrapper::after{
+    content : '';
+    position: absolute;
+    top: 0;
+    left: -60px;
+    width: 5px;
+    height: 100%;
+    background-color: var(--light-font-color);
+    border-radius: 5px;
+}
+.experience-wrapper .experience{
+    margin: 20px 0;
+    color: var(--white);
+    position: relative;
+}
+.experience-wrapper .experience::before{
+    content: '';
+    position: absolute;
+    left: -67px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: var(--light-font-color);
+}
+.experience-wrapper .experience:first-child{
+    margin-top: 0;
+}
+.experience-wrapper .experience:last-child{
+    margin-bottom: 0;
+}
+.experience-wrapper .experience .des{
+    text-align: justify;
+}
+.experience-wrapper .btn.show{
+    font-size: 13px;
+    color: var(--light-font-color);
+    cursor: pointer;
+    border: solid 1px var(--light-font-color);
+    display: inline-block;
+    width: 100px;
+    text-align: center;
+    padding: 10px 0;
+    border-radius: 5px;
+}
+

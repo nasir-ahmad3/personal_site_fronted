@@ -1,4 +1,9 @@
-
+section.aboutme{
+	background-color: var(--bg-second-color);
+}
+.light section.aboutme{
+	background-color: #eee;
+} 
 section.aboutme .about-box-wrapper{
 	display: flex;
 	margin-top: 20px;

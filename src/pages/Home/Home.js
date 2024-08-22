@@ -6,6 +6,7 @@ import About from "../../components/About/About"
 import Feedback from "../../components/Feedback/Feedback"
 import Contact from "../../components/Contact/Contact"
 import Responsive from '../../components/responsive/responsive'
+import Experience from "../../components/experience/experience"
 import { useFetch } from "../../hooks/UseFetch"
 
 
@@ -14,6 +15,7 @@ export default function Home(){
     return (
         <>
             <SiteHeader />
+            <Experience />
             <ProjectsList />
             <ServicesList />
             <BlogList url='blog/' skills={skills} isLoading={isLoading} err={err} />

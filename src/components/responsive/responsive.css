@@ -1,5 +1,6 @@
 
-@media (max-width: 1680px){
+
+@media (max-width: 1680px){ 
 	.container{
 		max-width: 1550px;
 		margin: 0 auto;
@@ -285,6 +286,30 @@
 	#message{
 		height: 200px;
 	}
+    div.job-title{
+        font-size: 15px;
+    }
+    section.experience > div > .des{
+        font-size: 13px;
+    }
+    div.sub-title > svg{
+        width: 20px !important;
+        height: 20px !important;
+    }
+    .experience-wrapper .experience .des,
+    div.job-title,
+    div.sub-title{
+        font-size: 13px !important;
+    }
+    .experience-wrapper{
+        margin-left: 80px !important;
+    }
+    .header{
+        font-size: 13px;
+    }
+    div.job-title{
+        font-size: 13px;
+    }
 }
 @media (max-width: 768px){
 	nav{
@@ -394,6 +419,19 @@
     .container > div.des{
         font-size: 15px;
     }
+	div.job-title{
+		font-size: 16px;
+	}
+	section.experience > div > .des{
+		font-size: 13px;
+	}
+	div.sub-title{
+		font-size: 16px !important;
+	}
+	div.sub-title > svg{
+		width: 19px;
+		height: 19px;
+	}	
 }
 @media (max-width: 480px){
     #contactme > h1:nth-child(1){
@@ -427,4 +465,19 @@
 		margin-top: -10px !important;
 		font-size: 15px;
 	}
+    .experience-wrapper {
+        margin-left: 40px !important;
+    }
+    .experience-wrapper .experience::before {
+        left: -40px !important;
+        width: 15px !important;
+        height: 15px !important;
+    }
+    .experience-wrapper::after {
+        left: -35px !important;
+    }
+    section.experience > div > div.name{
+        margin-top: 15px;
+        font-size: 18px !important;
+    }
 }

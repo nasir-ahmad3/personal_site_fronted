@@ -1,4 +1,9 @@
-
+section.services{
+	background-color: var(--bg-second-color);
+}
+.light section.services{
+	background-color: #eee;
+}
 section.services  .services_container{
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);

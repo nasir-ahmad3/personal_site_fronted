@@ -1,6 +1,6 @@
 
 section.footer{
-	background-color: var(--bg-second-color);
+	background-color: var(--bg-color);
 	width: 100%;
 	display: flex;
 	justify-content: space-between;
@@ -9,7 +9,7 @@ section.footer{
 	letter-spacing: 1px;
 }
 .light section.footer{
-	background-color: #eee;
+	background-color: #fff;
 	color: var(--black);
 }
 .light section.footer div svg{
