@@ -205,3 +205,24 @@ div.owl-item,
 .skeleton-text-project-title{
 	width: 50%;
 }
+.filter-wrapper{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	margin: 30px 0;
+	color: var(--light-font-color);
+}
+.filter-box{
+	margin: 0 10px;
+	text-transform: capitalize;
+	border: solid 1px var(--light-font-color);
+	padding: 7px 20px;
+	transition: all 0.5s;
+	cursor: pointer;
+}
+.filter-box.active,
+.filter-box:hover{
+	background-color: var(--light-font-color);
+	color: var(--bg-color);
+}
+

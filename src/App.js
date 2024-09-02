@@ -1,15 +1,16 @@
 import './App.css';
 import Nav from './components/Nav/Nav';
 import Footer from './components/footer/Footer';
-import { BrowserRouter, Routes, Route} from 'react-router-dom'
-import BlogDetail from './components/BlogList/BlogDetail'
-import Home from './pages/Home/Home'
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import BlogDetail from './components/BlogList/BlogDetail';
+import Home from './pages/Home/Home';
 import Blog from './pages/BlogPage/Blog';
 import Projects from './pages/Projects/Projects';
 import Services from './pages/Services/Services';
-import AboutMe from './pages/AboutMe/AboutMe'
+import AboutMe from './pages/AboutMe/AboutMe';
 import ContactMe from './pages/ContactMe/ContactMe';
-import SiteMap from './pages/SiteMap/SiteMap'
+import SiteMap from './pages/SiteMap/SiteMap';
+import FrontendMiniProjects from './pages/FrontendMiniProjects/FrontendMiniProjects';
 import { useState, useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -39,24 +40,22 @@ function App() {
   }, []);
 
   return (
-    <>
-      
-          <BrowserRouter>
-            <Nav />
-            <div className="mouseeffect" style={{ left: mousePosition.x, top: mousePosition.y }}></div>
-            <Routes>
-              <Route  path='/' element={<Home />} />
-              <Route  path='/blog/' element={<Blog />}/>
-              <Route  path='/blog/:id' element={<BlogDetail />} />
-              <Route  path="/projects/" element={<Projects />}/>
-              <Route  path="/services/" element={<Services />}/>
-              <Route  path='/about/' element={<AboutMe />}/>
-              <Route  path='/contact/' element={<ContactMe />}/>
-              <Route path="/sitemap/" element={<SiteMap />} />
-            </Routes>
-            <Footer />
-          </BrowserRouter>
-    </>
+    <BrowserRouter>
+      <Nav />
+      <div className="mouseeffect" style={{ left: mousePosition.x, top: mousePosition.y }}></div>
+      <Routes>
+        <Route path='/' element={<Home />} />
+        <Route path='/blog/' element={<Blog />} />
+        <Route path='/blog/:id' element={<BlogDetail />} />
+        <Route path="/projects/" element={<Projects />} />
+        <Route path="/services/" element={<Services />} />
+        <Route path='/about/' element={<AboutMe />} />
+        <Route path='/contact/' element={<ContactMe />} />
+        <Route path="/sitemap/" element={<SiteMap />} />
+        <Route path='/frontend-mini-projects/:id' element={<FrontendMiniProjects />} />
+      </Routes>
+      <Footer />
+    </BrowserRouter>
   );
 }
 
