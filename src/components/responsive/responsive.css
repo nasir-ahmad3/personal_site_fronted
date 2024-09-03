@@ -146,16 +146,6 @@
 	  font-size: 10px;
 	  margin-bottom: 25px;
 	}
-	section.services  .services_container li .des{
-		font-size: 12px;
-	}
-	section.services  .services_container li .title {
-	  font-size: 20px;
-	  margin: 5px;
-	}
-	section.services  .services_container{
-		margin-bottom: 20px;
-	}
 	section.blog .blog-wrapper .blog .img{
 		height: 140px;
 	}
@@ -212,6 +202,9 @@
 	  box-shadow: 25px -25px 0px rgba(170, 170, 170, 0.1);
 	  margin-bottom: 100px;
 	}
+	.services_container .description::before{
+		left: 3px;
+	}
 }	
 @media (max-width: 992px){
 	.siteHeader{
@@ -244,12 +237,6 @@
 	section.customer-feedback .box-wrapper,
 	section.aboutme .about-box-wrapper,
 	section.blog .blog-wrapper,
-	section.services  .services_container{
-		display: grid;
-		grid-template-columns: repeat(2, 1fr);
-		align-items: center;
-		justify-content: center;
-	}
 	section.aboutme .about-box-wrapper{
 		margin: 20px 50px;
 	}
@@ -374,8 +361,7 @@
 	}
 	section.customer-feedback .box-wrapper,
 	section.aboutme .about-box-wrapper,
-	section.blog .blog-wrapper,
-	section.services  .services_container{
+	section.blog .blog-wrapper{
 		display: flex;
 		flex-direction: column;
 		grid-template-columns: repeat(1, 1fr);
@@ -431,6 +417,9 @@
 	div.sub-title > svg{
 		width: 19px;
 		height: 19px;
+	}
+	.services_container{
+		grid-template-columns: repeat(1, 1fr)
 	}	
 }
 @media (max-width: 480px){
@@ -480,4 +469,7 @@
         margin-top: 15px;
         font-size: 18px !important;
     }
+	#root > div.blog-detail-container > div{
+		width: 97%;
+	}
 }

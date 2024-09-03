@@ -8,6 +8,10 @@
 	transition-property: color, background-color;
 	transition-duration: 0.3s;
 }
+html {
+    scroll-behavior: smooth;
+}
+
 :root{
 	--black: #605b5b;
 	--white: #ffffff;

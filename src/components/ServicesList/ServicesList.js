@@ -9,16 +9,18 @@ export default function Services(params){
     
     for (let i = 1; i <= 3; i++) {
         items.push(
-            <li key={i}>
+            <li key={i} className='service'>
                 <div className="img">
                     <span className="skeleton skeleton-text skeleton-image skeleton-service-img"></span>
                 </div>
-                <div className="title">
-                    <span className="skeleton skeleton-text skeleton-title"></span>
-                </div>
-                <div className="des">
-                    <span className="skeleton skeleton-text skeleton-text-project-des"></span>
-                    <span className="skeleton skeleton-text skeleton-text-project-des"></span>
+                <div className='description'>
+                    <div data-aos="zoom-out"  className="title">
+                        <span className="skeleton skeleton-text skeleton-title"></span>
+                    </div>
+                    <div data-aos="fade-up"  className="des">
+                        <span className="skeleton skeleton-text skeleton-text-project-des"></span>
+                        <span className="skeleton skeleton-text skeleton-text-project-des"></span>
+                    </div>
                 </div>
             </li>
         ) 
@@ -29,10 +31,12 @@ export default function Services(params){
 		<ul className="services_container"> 
             {!services && items}
 			{services && services.map((service,index) => (
-                <li key={index}>
+                <li key={index} className='service'>
                     <div data-aos="fade-down" className="img" style={{backgroundImage: `url(${service.thumbnail})`}}></div>
-                    <div data-aos="zoom-out"  className="title">{service.title}</div>
-                    <div data-aos="fade-up"   className="des">{service.description}</div>
+                    <div className='description'>
+                        <div data-aos="zoom-out"  className="title">{service.title}</div>
+                        <div data-aos="fade-up"  className="des">{service.description}</div>
+                    </div>
                 </li>
             ))}
 		</ul>
