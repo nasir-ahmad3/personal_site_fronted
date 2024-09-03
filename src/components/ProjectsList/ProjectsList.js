@@ -49,7 +49,7 @@ export default function Projects (params){
                             <p className="title gradient-text">{project.title}</p>
                             <div className="des">
                                 {project.description}
-                                <a href={project.project_type === 'f' ? project.link : `https://projects.nasirahmadahmady.com/projects/${project.id}`} target="_blank">read more</a>
+                                <a href={project.project_type === 'f' ? project.link : `https://projects.nasirahmadahmady.com/?project=${project.id}`} >read more</a>
                             </div>
                         </div>
                     ))}             
