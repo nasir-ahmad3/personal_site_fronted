@@ -11,7 +11,7 @@ body.light  section.projects{
 	text-align: center;
 	font-size: 65px;
 	letter-spacing: 3px;
-	font-weight: bolder;
+	font-weight: bolder; 
 	text-transform: capitalize;
 }
 .container > div.des{
@@ -213,16 +213,26 @@ div.owl-item,
 	color: var(--light-font-color);
 }
 .filter-box{
-	margin: 0 10px;
-	text-transform: capitalize;
-	border: solid 1px var(--light-font-color);
-	padding: 7px 20px;
-	transition: all 0.5s;
-	cursor: pointer;
+	text-align: center;
+	border-radius: 0;
+	border: none;
+	outline: none;
 }
-.filter-box.active,
-.filter-box:hover{
-	background-color: var(--light-font-color);
+select {
+	width: 200px;
+	padding: 10px;
+	border-radius: 5px;
+	border: 1px solid #ccc;
+	background-color: #f9f9f91f;
+	font-size: 16px;
+	color: #fff;
+	outline: none;
+	appearance: none; 
+}  
+select option {
+	/* background-color: #f9f9f91f; */
+	/* background-color: red; */
 	color: var(--bg-color);
-}
+	/* padding: 10px; */
 
+}  

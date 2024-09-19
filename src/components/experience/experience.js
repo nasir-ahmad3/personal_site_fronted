@@ -75,7 +75,7 @@ export default function Experience() {
                         </g>
                     </g>
                 </svg>
-                Experience
+                Experiences
             </div>
             <div className="experience-wrapper">
                 {data && experiencesList.map((exp, index) => (

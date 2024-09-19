@@ -1,6 +1,9 @@
 
 
 @media (max-width: 1680px){ 
+	.vectorContainer > svg{
+		margin-top: 0px;
+	}
 	.container{
 		max-width: 1550px;
 		margin: 0 auto;
@@ -207,6 +210,12 @@
 	}
 }	
 @media (max-width: 992px){
+	.vectorContainer{
+		display: none;
+	}
+	#root > div:nth-child(3) > div {
+		width: 100%;
+	}
 	.siteHeader{
 		height: 600px;
 	}
