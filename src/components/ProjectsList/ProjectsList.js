@@ -57,7 +57,7 @@ export default function Projects(params) {
               .filter((p) => filterBy === 'all' || p.project_type === filterBy)
               .map((project, index) => (
                 <div className="box" key={index}>
-                  <div className="img" style={{ backgroundImage: `url(${project.thumbnail})` }}></div>
+                  <div className="img" style={{ backgroundImage: `url(${project.thumbnail})` }}></div>{console.log(`https://projects.nasirahmadahmady.com/?project=${project.id}`)}
                   <p className="title gradient-text">{project.title}</p>
                   <div className="des">
                     {project.description}

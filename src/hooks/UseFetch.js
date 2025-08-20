@@ -5,7 +5,7 @@ export const useFetch = (collectionName) => {
     const [err, setErr] = useState(null);
     const [isLoading, setIsLoading] = useState(false);
 
-    const url = `https://nasirahmadahmady.site/${collectionName}`;
+    const url = `http://backend.nasirahmadahmady.com/${collectionName}`;
 
     const fetchData = useCallback(async () => {
         const options = {
